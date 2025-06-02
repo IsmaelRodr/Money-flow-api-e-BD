@@ -1,0 +1,43 @@
+JSON para as rotas do Moneyflow API:
+
+POST e PUT Usuários:
+
+{
+"nome":" ",
+"email":" ",
+"senha":" "
+}
+
+POST /login Usuários:
+
+{
+"email":" ",
+"senha":" "
+}
+
+POST e PUT Categorias:
+
+{
+"nome_categoria":" "
+}
+
+POST e PUT Transações:
+
+{
+"descricao":" ",
+"valor":" ",
+"tipo":" ",
+"data_transacao":" ",
+"id_categoria":" ",
+"id_usuario":" "
+}
+
+POST /now Transação:
+
+{
+"descricao":" ",
+"valor":" ",
+"tipo":" ",
+"id_categoria":" ",
+"id_usuario":" "
+}

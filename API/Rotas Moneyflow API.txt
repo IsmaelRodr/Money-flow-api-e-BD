@@ -1,0 +1,68 @@
+Rotas do MoneyFlow API
+
+Usuário:
+
+GET http://localhost:3000/usuario
+ (lista todos os usuários, apenas administradores)
+
+GET http://localhost:3000/usuario/:id
+ (detalha um usuário específico, apenas administradores)
+
+POST http://localhost:3000/usuario
+ (cria um novo usuário com nome, e-mail e senha)
+
+POST http://localhost:3000/usuario/login
+ (usuário faz o login e é gerado o token para autenticação)
+
+PUT http://localhost:3000/usuario/:id
+ (atualiza dados de um usuário específico, apenas administradores)
+
+DELETE http://localhost:3000/usuario/:id
+ (exclui um usuário, apenas administradores)
+
+Categorias:
+
+GET http://localhost:3000/categoria
+ (lista todas as categorias)
+
+GET http://localhost:3000/categoria/:id
+ (detalha uma categorias especifica)
+
+POST http://localhost:3000/categoria
+ (cria uma nova categoria, apenas administradores)
+
+PUT http://localhost:3000/categoria/:id
+ (atualiza uma categoria, apenas administradores)
+
+DELETE http://localhost:3000/categoria/:id
+ (exclui uma categoria, apenas administradores)
+
+Transações:
+
+GET http://localhost:3000/transacao
+ (lista todas as transações)
+
+GET http://localhost:3000/transacao/:id
+ (detalha uma transação específica)
+
+POST http://localhost:3000/transacao
+ (cria uma nova transação)
+
+POST http://localhost:3000/transacao/now
+ (cria uma nova transação com a data e hora atual)
+
+PUT http://localhost:3000/transacao/:id
+ (atualiza uma transação)
+
+DELETE http://localhost:3000/transacao/:id
+ (exclui uma transação)
+
+View Saldo por categorias:
+
+GET http://localhost:3000/saldoporcategoria
+ (exibe o saldo total por categoria)
+
+View Transações por categoria:
+
+GET http://localhost:3000/transacaoporcategoria
+ (lista as transações com o nome de suas categorias)
